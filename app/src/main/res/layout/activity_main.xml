@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ui.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+    <TextView
+        android:id="@+id/tv_datas"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_data"
+        android:text="股票数据"
+        />
+    <ImageView
+        android:id="@+id/iv_gupiao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="今日开盘价:"
+        android:id="@+id/todayStartPri"
+        android:layout_below="@+id/tv_datas"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="今日开盘价"
+        android:layout_below="@+id/tv_datas"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="昨日收盘价:"
+        android:id="@+id/yestodEndPri"
+        android:layout_below="@+id/todayStartPri"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="昨日收盘价"
+        android:id="@+id/yestodEnd"
+        android:layout_above="@+id/todayMax"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="今日最高价:"
+        android:id="@+id/todayMax"
+        android:layout_below="@+id/yestodEndPri"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="今日最高价"
+        android:id="@+id/Max"
+        android:layout_alignTop="@+id/todayMax"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="今日最低价:"
+        android:id="@+id/todayMin"
+        android:layout_below="@+id/todayMax"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="今日最低价:"
+        android:id="@+id/Min"
+        android:layout_below="@+id/Max"
+        android:layout_alignStart="@+id/Max" />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:text="买一报价:"
+    android:id="@+id/buyOnePri"
+    android:layout_marginTop="40dp"
+    android:layout_below="@+id/todayMin"
+    android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="买一报价:"
+        android:id="@+id/buyOne"
+        android:layout_alignTop="@+id/buyOnePri"
+        android:layout_alignStart="@+id/Min" />
+
+    <TextView
+    android:id="@+id/buyTwoPri"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_below="@+id/buyOnePri"
+    android:text="买二报价:"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/buyTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="买二报价:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/buyOne"
+        android:layout_alignStart="@+id/buyOne" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="买三报价:"
+        android:id="@+id/buyThreePri"
+        android:layout_below="@+id/buyTwoPri"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="买三报价:"
+        android:id="@+id/buyThree"
+        android:layout_alignTop="@+id/buyThreePri"
+        android:layout_alignStart="@+id/buyTwo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="买四报价;"
+        android:id="@+id/buyFourPri"
+        android:layout_below="@+id/buyThreePri"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="买四报价;"
+        android:id="@+id/buyFour"
+        android:layout_above="@+id/buyFivePri"
+        android:layout_alignStart="@+id/buyThree" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="买五报价;"
+        android:id="@+id/buyFivePri"
+        android:layout_below="@+id/buyFourPri"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="买五报价;"
+        android:id="@+id/buyFive"
+        android:layout_alignTop="@+id/buyFivePri"
+        android:layout_alignStart="@+id/buyFour" />
+</RelativeLayout>

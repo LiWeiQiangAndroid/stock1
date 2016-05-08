@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Bind(R.id.tv_datas)
     TextView tvDatas;
+
     @Bind(R.id.today)
     TextView today;
     @Bind(R.id.yestodEnd)
@@ -75,7 +76,6 @@ public class MainActivity extends AppCompatActivity {
                 buyThree.setText(stock.getResult().get(0).getData().getBuyThreePri());
                 buyFour.setText(stock.getResult().get(0).getData().getBuyFourPri());
                 buyFive.setText(stock.getResult().get(0).getData().getBuyFivePri());
-
 
             }
         });

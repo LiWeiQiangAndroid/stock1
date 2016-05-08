@@ -1,0 +1,37 @@
+Index: app/src/main/java/com/example/stock/ui/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/stock/ui/MainActivity.java	(date 1462717627000)
++++ app/src/main/java/com/example/stock/ui/MainActivity.java	(revision )
+@@ -20,6 +20,7 @@
+ 
+     @Bind(R.id.tv_datas)
+     TextView tvDatas;
++
+     @Bind(R.id.today)
+     TextView today;
+     @Bind(R.id.yestodEnd)
+@@ -75,7 +76,6 @@
+                 buyThree.setText(stock.getResult().get(0).getData().getBuyThreePri());
+                 buyFour.setText(stock.getResult().get(0).getData().getBuyFourPri());
+                 buyFive.setText(stock.getResult().get(0).getData().getBuyFivePri());
+-
+ 
+             }
+         });
+Index: app/src/main/java/com/example/stock/util/HttpUtil.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/stock/util/HttpUtil.java	(date 1462717627000)
++++ app/src/main/java/com/example/stock/util/HttpUtil.java	(revision )
+@@ -69,5 +69,6 @@
+ 
+     public interface OnGetNewsListener{
+         void OnSuccess(Stock stock);
++
+     }
+ }

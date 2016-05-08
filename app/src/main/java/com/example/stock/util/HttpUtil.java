@@ -69,5 +69,6 @@ public class HttpUtil {
 
     public interface OnGetNewsListener{
         void OnSuccess(Stock stock);
+
     }
 }
